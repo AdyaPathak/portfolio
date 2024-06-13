@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/miloLogo.png"/>
+    <title>Adya Pathak | Home</title>
+
+    <style>
+      body 
+      {
+        margin: 0;
+      }
+	  
+	  html, body 
+	  {
+        height: 100%;
+        margin: 0;
+      }
+
+      .topnav 
+      {
+        overflow: hidden;
+        background-color: white;
+        position:fixed;
+        width:100%;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+        z-index:2;
+      }
+
+      .topnav img
+      {
+        float:left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        width:20%;
+      }
+
+      .topnav a 
+      {
+        float:right;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover 
+      {
+        color: grey;
+      }
+
+      .topnav .icon 
+      {
+        display: none;
+      }
+
+      
+		
+  	  .columnIntroText 
+        {
+          float: left;
+          width: 50%;
+          margin-bottom:3%;
+        }
+  	  
+  	  .columnIntroImg
+        {
+          float: left;
+          width: 50%;
+          margin-bottom:3%;
+        }
+	  
+      .rowIntro:after 
+      {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .social 
+      { 
+        width: 100%;
+        top: 50%;
+        text-align: center;
+      }
+
+      .social .link 
+      {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-clip: content-box;
+        font-size: 150%;
+      }
+
+      .social .link span 
+      {
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .social .link:hover 
+      {
+        padding: 1px;
+        color: white;
+      }
+
+      .social .link.envelope
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.envelope:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      .social .link.linkedin 
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.linkedin:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      .social .link.medium
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.medium:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      .social .link.github
+      {
+        background-color: black;
+        color: white;
+      }
+      .social .link.github:hover
+      {
+        background-color: #555;
+        color: white;
+      }
+
+      html 
+      {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after 
+      {
+        box-sizing: inherit;
+      }
+
+      .columnCard 
+      {
+        float: left;
+        width: 50%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card1 
+      {
+        margin-left: 30%;
+        margin-right: 5%;
+      }
+
+      .card2 
+      {
+        margin-left: 5%;
+        margin-right: 30%;
+      }
+
+      .containerCard 
+      {
+        padding: 5%;
+        background-color: white;
+        border-radius:15px;
+      }
+
+      .containerCard::after, .rowCard::after 
+      {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .footer 
+      {
+         padding-top:2.5%;
+         padding-bottom:2.5%;
+         width: 100%;
+         background-color:#F5F5F5;
+         color: black;
+         text-align: center;
+      }
+
+      .button 
+      {
+        background-color: #00416d;
+        border: none;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 100px;
+      }
+
+      .button:hover 
+      {
+        background-color: #555;
+      }
+
+      .button_resume 
+      {
+        background-color: #00416d;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+
+      .button_resume:hover 
+      {
+        background-color: #555;
+      }
+
+      .anchor 
+      {
+        position: relative;
+      }
+
+      .anchor a 
+      {
+        position: absolute;
+        left: 0px;
+        top: -8%;
+      }
+
+      .columnAwardsText 
+      {
+        float: left;
+        width: 75%;
+        padding: 5px;
+      }
+
+      .columnAwardsImg 
+      {
+        float: left;
+        width: 25%;
+        padding: 5px;
+      }
+
+      .rowAwards::after 
+      {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .columnBlog 
+      {
+        float: left;
+        width: 33.33%;
+        margin-bottom: 16px;
+      }
+
+      .rowBlog 
+      {
+        margin: 0 0px;
+      }
+
+      .rowBlog:after 
+      {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .cardBlog 
+      {
+        padding: 2%;
+        text-align: center;
+        margin-right:10%;
+        margin-left:10%;
+        border-radius:15px;
+      }
+
+      .cardBlog img
+      {
+        width:100%;
+      }
+      @media screen and (max-width: 900px) 
+      {
+        .topnav img
+        {
+          float:left;
+          display: block;
+          color: black;
+          text-align: center;
+          width:40%;
+        }
+
+        .topnav a 
+        {
+          display: none;
+        }
+
+        .topnav a.icon 
+        {
+          float: right;
+          display: block;
+        }
+        
+        .topnav.responsive 
+        {
+          position: fixed;
+        }
+
+        .topnav.responsive .icon 
+        {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .topnav.responsive a 
+        {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .columnIntroText
+        {
+          width: 100%;
+        }
+		
+		.columnIntroImg
+        {
+          width: 100%;
+        }
+		
+        .anchor a 
+        {
+          position: absolute;
+          left: 0px;
+          top: -2%;
+        }
+
+        .columnCard 
+        {
+          width: 100%;
+          display: block;
+        }
+
+        .card1 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+
+        .card2 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+
+        .columnAwardsText 
+        {
+          width: 100%;
+        }
+
+        .columnAwardsImg 
+        {
+          width: 100%;
+          padding-left:25%;
+          padding-right:25%;
+        }
+
+        .columnBlog 
+        {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        .cardBlog img
+        {
+          width:75%;
+        }
+      }
+
+      @media screen and (max-width: 600px) 
+      {
+        .cardBlog img
+        {
+          width:100%;
+        }
+        .card1 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+        .card2 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 10%;
+          margin-right: 10%;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" style="font-family: 'Open Sans', sans-serif; margin-right:2%; color:black; border-bottom: 2px solid #00416d;">Home</a>
+      <a href="contact.html" style="font-family: 'Open Sans', sans-serif;">Contact</a>
+      <a href="https://drive.google.com/file/d/1NteomaqhyjELkqmDBTNryQSp1XH3ewMP/view?usp=sharing" style="font-family: 'Open Sans', sans-serif;" target="_blank">Resume</a>
+      <a href="about.html" style="font-family: 'Open Sans', sans-serif;">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <h1 style="font-family: 'Abril Fatface', cursive; float:left; font-size:125%; margin-left:2%;">Adya Pathak</h1>
+    </div>
+
+    <br><br><br>
+
+    <div class="rowIntro" style="padding-right:5%;padding-left:5%; padding-top:7.5%; margin-bottom:-10%; height:100%;">
+      <div class="columnIntroImg" style=" text-align:center;">
+          <img src="images/adyaHome.jpeg" width="65%" alt="miloni's picture in a restaurant">
+      </div>
+      <div class="columnIntroText" style=" text-align:center;padding-top:3%; ">
+          <a style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:400%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">Adya Pathak</span></a>
+          <br><br>
+          <p style="font-family: 'Open Sans', sans-serif; font-size:112.5%; ">A driven Associate Product Manager specializing in enhancing product functionalities and user experiences through data-driven decision-making and innovative integrations. With a strong background in product management and data analytics, I am dedicated to optimizing user engagement and operational efficiency in the tech industry.<br><br></p>
+          <div class="social">
+              
+              <a href="https://www.linkedin.com/in/adya-pathak/" class="link linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+              <a href="mailto:adya.pathak29@gmail.com" class="link envelope" target="_blank"><span class="fa fa-envelope"></span></a>
+          </div>
+      </div>
+    </div>
+
+    <div class="anchor" style="padding-top:2.5%;" >
+      <a name="target" id="experiences"> </a>
+    </div>
+
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:black;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #dbf6e9 50%, transparent 50%);">
+      Experience</span>
+    </p>
+
+    <!-- Juno Experience -->
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="columnAwardsImg" style="text-align:center;">
+      <img src="images/junoLogo.jpg" alt="Juno logo" style="width:50%;">
+    </div>
+    <div class="columnAwardsText">
+      <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+              Juno, Bangalore</b> <br><b>Associate Product Manager | Jan 2024 – Present</b>
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;">
+        • Continuously integrating partner services for KYC, on-ramp/off-ramp functionality, and card issuance while leading product localization initiatives for Velo, a global self-custody wallet solution enabling users to hold dollar accounts worldwide<br>
+        • Reduced support tickets by 35% through enhanced resolution strategies and user experience upgrades
+      </p>
+    </div>
+    </div>
+    <hr style=" display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; margin-left:7.5%; margin-right:7.5%;">
+
+    <!-- Unacademy Experience -->
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="columnAwardsImg" style="text-align:center;">
+      <img src="images/unacademyLogo.png" alt="Unacademy logo" style="width:50%;">
+    </div>
+    <div class="columnAwardsText">
+      <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+              Unacademy, Bangalore</b> <br><b>Associate Product Manager | Jul 2022 – Dec 2023</b>
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;">
+        • Achieved monthly revenue of 12 lakhs by strategizing and enabling the sale of individual printed and digital notes<br>
+        • Generated INR 50Cr annual revenue growth through user led centre visit booking, leveraging user intent and location data<br>
+        • Implemented flexible installment options which accounted for 17% of total payments, catering to tier 2 and 3 user segments
+      </p>
+    </div>
+    </div>
+    <hr style=" display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; margin-left:7.5%; margin-right:7.5%;">
+
+    <!-- Swiggy Experience -->
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="columnAwardsImg" style="text-align:center;">
+      <img src="images/swiggyLogo.jpg" alt="Swiggy logo" style="width:50%;">
+    </div>
+    <div class="columnAwardsText">
+      <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+              Swiggy, Bangalore</b> <br><b>Product Management Intern | Jan 2022 – May 2022</b>
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;">
+        • Enhanced the discoverability by 3% of Code on Swiggy app by improving prominence and introducing static code<br>
+        • Reduced order delays, improved customer backward serviceability (12%) by scoping out the Serviceability Evaluation Engine
+      </p>
+    </div>
+    </div>
+    <hr style=" display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; margin-left:7.5%; margin-right:7.5%;">
+
+    <!-- ShareChat Experience -->
+    <div class="rowAwards" style="font-family: 'Open Sans', sans-serif; margin-top:2%; margin-left:7.5%;margin-right:7.5%;">
+    <div class="columnAwardsImg" style="text-align:center;">
+      <img src="images/shareChatLogo.png" alt="ShareChat logo" style="width:50%;">
+    </div>
+    <div class="columnAwardsText">
+      <p style="font-family: 'Open Sans', sans-serif; margin-top:2%; "><b style="font-family: 'Open Sans', sans-serif; font-size:125%;">
+              ShareChat, Bangalore</b> <br><b>Product Analyst Intern | Mar 2021 - Jun 2021</b>
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;">
+        • Optimised Ads/DAU and retention increase (0.21%) by reducing Ads for least impacted users and achieving gain in D30 retention
+      </p>
+    </div>
+    </div>
+    <hr style=" display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; margin-left:7.5%; margin-right:7.5%;">
+
+<br>
+
+    <div class="viewResume" style="text-align:center; padding-top:3%;padding-bottom:3%;">
+      <button class="button_resume">
+        <a href="https://drive.google.com/file/d/1NteomaqhyjELkqmDBTNryQSp1XH3ewMP/view?usp=sharing" style="font-family: 'Open Sans', sans-serif; text-decoration: none; color:white;" target="_blank">
+            View Resume
+        </a>
+      </button>
+    </div>
+
+
+    <div class="projectBG" style="background-color: black; padding-bottom: 2%;">
+    <div class="anchor" style="padding-top:2.5%;">
+      <a name="target" id="productdecks"> </a>
+    </div>
+
+    <p style="text-align:center;font-family: 'Abril Fatface', cursive; font-size:300%; color:white;margin-right:3%;margin-left:3%;padding-bottom:1.5%;"><span style="background: linear-gradient(to top, #00416d 50%, transparent 50%);">
+        Product Decks</span>
+    </p>
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+          <div class="containerCard" >
+            <img src="images/Cars24logo.jpg" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+              Cars24 - Buyer conversion problem
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1KHmuA89RmKK5-PUGxvxvHp02x79i-trV/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              A case study for a product that connects students with their college clubs. Conducted user interviews, brainstormed a solution and built the UI prototype.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+            <div class="containerCard">
+              <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                Netflix - Discourage Sharing of Netflix accounts
+              </b>
+              <p>
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                    <a href="https://drive.google.com/file/d/1qNOorTClI8M2MeqITeU_C4R6dF4uXJ_3/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                </button> 
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                    <a href="https://docs.google.com/spreadsheets/d/1ojoj6pYCNpRg880XZG38HBSIyZ4-62VM/edit?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Revenue Analysis</a>
+                </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+	  
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+          <div class="containerCard" >
+            <img src="images/Cars24logo.jpg" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+              Google Pay Merchant Rewards Club
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1iwGiioq9gfNQ01JF61QJXWKC_k6cSw3j/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              A case study for a product that connects students with their college clubs. Conducted user interviews, brainstormed a solution and built the UI prototype.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+            <div class="containerCard">
+              <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                Flipkart - PlayTix : Performance = People + Process
+              </b>
+              <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/13R85lpa7NgqdC5OLo3OIFRzx6JRdGWFA/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+	  
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+          <div class="containerCard" >
+            <img src="images/Cars24logo.jpg" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+              Groww With Community
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1h1_BdkqZEVul6M19D-MLlnjWWmfI50E1/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              A case study for a product that connects students with their college clubs. Conducted user interviews, brainstormed a solution and built the UI prototype.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+            <div class="containerCard">
+              <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                Hackerrank
+              </b>
+              <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1CirF7z0CfM00_bWlNMysxmhWh8JgMRlu/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+	  
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+            <div class="containerCard">
+              <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                Schmooze
+              </b>
+              <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1LZO4euuJbTxUda1IhuHGXrbgLeeY7AlF/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+          <div class="containerCard" >
+            <img src="images/Cars24logo.jpg" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+              Schmooze 2 - Retention Campaign
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1tOfyb-n41DXRU17pNd0KDgkCOCdIv2Ii/view" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              A case study for a product that connects students with their college clubs. Conducted user interviews, brainstormed a solution and built the UI prototype.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+          <div class="containerCard" >
+            <img src="images/Cars24logo.jpg" alt="expected results and results obtained" style="width:100%; border-radius:15px;">
+            <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+              TeCHminator: Case Competition
+            </b>
+            <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/1KxFam7RcBBbh8C8bGfx1Cb_AaLSWAuVs/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+            
+            <p style="font-family: 'Open Sans', sans-serif;">
+              A case study for a product that connects students with their college clubs. Conducted user interviews, brainstormed a solution and built the UI prototype.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columnCard">
+        <div class="card2">
+          
+            <div class="containerCard">
+              <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                UnAcademy
+              </b>
+              <p>
+                  <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                      <a href="https://drive.google.com/file/d/17Fv5cShdjkxNcbk5zEdJnkBzoAF_YVty/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                  </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+	  
+    <div class="rowCard">
+      <div class="columnCard">
+        <div class="card1">
+          
+            <div class="containerCard">
+              <img src="images/ecoeventProject.png" alt="flowchart of the implementation" style="width:100%; border-radius:15px;">
+              <b style="font-family: 'Open Sans', sans-serif; font-size:115%;">
+                ShareChat Feed Analysis
+              </b>
+              <p>
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                    <a href="https://drive.google.com/file/d/1p_xPHa1njWD6KsxhN1NmQmQlUBVCz7n5/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Pitch Deck</a>
+                </button> 
+                <button class="button" style="font-family: 'Open Sans', sans-serif;">
+                    <a href="https://drive.google.com/file/d/1enhGnWxC84p_wr5_nwaEVPEOrb3UMCmL/view?usp=drive_link" style="text-decoration: none;color:white;" target="_blank">Code</a>
+                </button> 
+              </p>
+              <p style="font-family: 'Open Sans', sans-serif;">
+                A case study for a product that nudges people towards eco-friendly options while organizing events. The proposed product is a one-stop-shop for event requirements.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+	  
+
+    <br><br><br>
+    <div class="footer">
+      <p style="font-family: 'Open Sans', sans-serif;">
+        Thank you for stopping by
+      </p>
+      <p style="font-family: 'Open Sans', sans-serif;">
+        Let's connect!
+        <div class="social">
+        
+        <a href="https://www.linkedin.com/in/adya-pathak" class="link linkedin" target="_blank" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  background-clip: content-box;
+  color: white;font-size: 125%;"><span class="fa fa-linkedin" ></span></a>
+          <a href="mailto:adya.pathak29@gmail.com" class="link envelope" target="_blank" style="display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 37.5px;
+  height: 37.5px;
+  border-radius: 50%;
+  background-clip: content-box;
+  color: white;font-size: 125%;"><span class="fa fa-envelope"></span></a>
+        
+        </div>
+      </p>
+      <br>
+    </div>
+
+
+    <script>
+      function myFunction() 
+      {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") 
+        {
+          x.className += " responsive";
+        } 
+        else 
+        {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+  </body>
+</html>
